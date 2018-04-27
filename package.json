@@ -1,0 +1,39 @@
+{
+  "name": "verdaccio-s3",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf lib es coverage",
+    "build": "./build.sh",
+    "test": "eslint --max-warnings 0 src && flow check && jest --coverage"
+  },
+  "devDependencies": {
+    "@verdaccio/types": "^2.1.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.2",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "eslint": "4.13.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-plugin-flowtype": "^2.46.3",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "flow-bin": "^0.70.0",
+    "flow-typed": "^2.4.0",
+    "jest": "^22.4.3",
+    "prettier": "^1.12.1",
+    "verdaccio": "^3.0.0-beta.6"
+  },
+  "dependencies": {
+    "@verdaccio/streams": "^1.0.0",
+    "aws-sdk": "^2.229.1"
+  }
+}

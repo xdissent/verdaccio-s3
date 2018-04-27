@@ -1,0 +1,10 @@
+version: '3'
+services:
+  localstack:
+    image: localstack/localstack
+    ports:
+      - "4572:4572"
+    environment:
+      - SERVICES=s3
+      - HOSTNAME_EXTERNAL=local.stack
+      - DEBUG=1
